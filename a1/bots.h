@@ -19,9 +19,9 @@ extern char* even_quote;
 extern char* odd_quote;
 
 void init();
-void createThread();
+void start();
 void makeChatFile(char* fname, char* mode, char* str);
-void writeToChat(const char* buff, const int tid, const int st);
+void writeToChat(char* buff, const int tid, const int st);
 void* chatMesg(void* args);
 void release();
 

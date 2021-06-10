@@ -108,7 +108,7 @@ void* chatMesg(void* args)
 }
 
 //output the text msg to chat file using semaphore in critical section
-void writeToChat(const char* buffer, const int thdID, const int sleepTime)
+void writeToChat(char* buffer, const int thdID, const int sleepTime)
 {
     printf("Thread %d is running\n", thdID+1);
     sleep(sleepTime);
