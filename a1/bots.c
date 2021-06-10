@@ -135,5 +135,5 @@ void release()
 
     sem_destroy(&FLAG);
 
-    printf("Good Bye!\n");
+    printf("\nAll Done!\nGood Bye!\n");
 }

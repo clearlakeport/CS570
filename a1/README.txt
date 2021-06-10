@@ -8,11 +8,25 @@ at home, then tested on edoras server.
 Requirements
 The project is written in C and requires adding the pthread and semaphore libraries for the linker. It has been tested under linux.
 
-compilation
-Use the included Makefile.
+Description
+Due to all 7 bots want to access the chat file, a semaphore is needed to lock the chat file to prevent race condition.
+When one bot is writing to the chat file, it enters the critical section, the semaphore locks this shared resource
+to prevent accidentally being overwritten by another bot at the same time. Once the writting is done, the bot releases the lock so other bots can write to it.
 
-Example
-See the “QUOTE.txt” file for a sample run.
+Lessons Learned
+I learned a lot of thread and semaphore and how they work in Linux system.
+ 
+Compilation
+Use the included Makefile. 
+make clean
+make
+
+Files
+main.c  driver
+bot.h   header
+bot.c   functions for chat bot
+README.txt
+QUOTE.txt   output
 
 Configuration
 See the Makefile

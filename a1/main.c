@@ -6,6 +6,7 @@
     semaphore. The program is first tested on Ubuntu under
     VMware at home, then tested on edoras server.
     Dong Lin
+    Summer, 2021
 */
 #include "bots.h"
 
