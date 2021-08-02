@@ -40,8 +40,6 @@ Members
 Dong Lin
 cssc4206
 redid: 827228799
-I asked on the class Discord server for a teammate, but noone replied me.
-I could not find a lab partner for this class.
 
 Licensing
 No license is required.
